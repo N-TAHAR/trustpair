@@ -62,3 +62,11 @@ GET a random IBAN
 ```
 GET '/random_iban'
 ```
+<br/>
+
+## Run the tests
+<br/>
+
+```
+bundle exec rspec spec
+```
