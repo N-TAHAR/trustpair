@@ -70,3 +70,19 @@ GET '/random_iban'
 ```
 bundle exec rspec spec
 ```
+<br/>
+
+# MetaWeather API
+
+You want to know if it rains in your city tomorrow ?
+
+Paris in this example :
+```
+rake metaweather_api:tomorrow_rain[paris]
+```
+
+zsh console ? Try this instead : 
+
+```
+rake metaweather_api:tomorrow_rain\[london\]
+```
