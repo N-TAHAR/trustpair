@@ -1,24 +1,64 @@
-# README
+# IBAN BANK API
+## Installation
+<br/>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+```
 
-Things you may want to cover:
+```
+rails db:create
+```
 
-* Ruby version
+```
+rails db:migrate
+```
 
-* System dependencies
+```
+rails server
+```
 
-* Configuration
+<br/>
 
-* Database creation
+## How to use this API ? 
 
-* Database initialization
+<br/>
 
-* How to run the test suite
+Create an IBAN
+```
+POST '/ibans', params: { name: 'iban_name' }
+```
+<br/>
 
-* Services (job queues, cache servers, search engines, etc.)
+Update an IBAN
+```
+PUT '/ibans/:iban_name', params: { name: 'new_iban_name' }
+```
+<br/>
 
-* Deployment instructions
+Delete an IBAN
 
-* ...
+```
+DELETE '/ibans/:iban_name'
+```
+<br/>
+
+GET all IBANs
+
+```
+GET '/ibans'
+```
+<br/>
+
+GET an IBAN
+
+```
+GET '/ibans/:iban_name'
+```
+<br/>
+
+GET a random IBAN
+
+```
+GET '/random_iban'
+```
