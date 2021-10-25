@@ -1,0 +1,22 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - '*'
+    - 'bin/*'
+    - 'config/**/*'
+    - 'config/*'
+    - 'lib/**/*'
+    - 'log/*'
+    - 'public/*'
+    - 'storage/*'
+    - 'tmp/**/*'
+    - 'tmp/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
